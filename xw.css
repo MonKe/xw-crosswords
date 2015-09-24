@@ -1,0 +1,118 @@
+body {
+  color: #666;
+  font: 14px serif
+}
+
+#main, #grid, #menu, #tips, .xw_row {
+  display: flex
+}
+#main {
+  align-items: flex-start;
+  justify-content: center
+}
+#grid {
+  background: #eee;
+  flex-direction: column;
+  padding: .5em
+}
+#grid.xw_win {
+  background: #bea
+}
+#menu {
+  justify-content: center;
+  margin: 1em 0;
+  padding: 0
+}
+#tips {
+  flex-wrap: wrap
+}
+#templates {
+  display: none
+}
+
+.xw_help {
+  margin: 0 auto 20px;
+  max-width: 60ch;
+  text-align: center
+}
+.xw_cell {
+  background: #fff;
+  box-sizing: border-box;
+  box-shadow: 0 0 0 2px #eee inset;
+  height: 1.5em;
+  line-height: 1.5em;
+  padding: 2px;
+  text-align: center;
+  width: 1.5em
+}
+.xw_win .xw_cell {
+  box-shadow: 0 0 0 2px #bea inset;
+}
+.xw_cell:hover, .xw_tip:hover, .xw_show {
+  background: #eee;
+  cursor: pointer
+}
+#grid .xw_focus {
+  box-shadow: 0 0 0 2px #666
+}
+.xw_fh, .xw_fv {
+  position: relative
+}
+.xw_fh:after, .xw_fv:after {
+  border-radius: .25em;
+  content: '';
+  display: block;
+  height: .5em;
+  pointer-events: none;
+  position: absolute;
+  width: .5em
+}
+.xw_fh:after {
+  background: #666;
+  left: 1.35em;
+  top: .5em
+}
+.xw_fv:after {
+  background: #666;
+  left: .5em;
+  top: 1.35em
+}
+.xw_block {
+  background: #666
+}
+.xw_diff {
+  background: #fcc
+}
+.xw_btn {
+  cursor: pointer;
+  text-decoration: underline
+}
+.xw_win + #menu .xw_btn {
+  background: #bea
+}
+.xw_btn:hover {
+  background: #eee
+}
+.xw_list {
+  padding-left: 2em  
+}
+.xw_list ul {
+  max-width: 30ch;
+  padding: 0
+}
+.xw_tipline {
+  list-style-type: none;
+  margin-bottom: .3em
+}
+.xw_tip:hover, .xw_tip.xw_show {
+  text-decoration: underline
+}
+
+h1 {
+  font: 20px/24px serif;
+  text-align: center
+}
+h2 {
+  font: bold 14px/18px serif;
+  margin: 0
+}

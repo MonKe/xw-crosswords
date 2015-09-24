@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>Xw! Interactive Crosswords</title>
+  <script type="text/javascript" src="crossword.js"></script>
+  <link rel="stylesheet" type="text/css" href="xw.css"/>
+</head>
+<body>
+  <h1>Xw! Interactive crosswords</h1>
+  <p class="xw_help">Navigation au clavier ou à la souris. Cliquer valider pour
+    voir les cases avec des erreurs. Taper entrée pour changer le sens d'écriture.</p>
+  <div id="main">
+    <section>
+      <div id="grid"></div>
+      <menu id="menu">
+        <span class="xw_btn">Valider</span>
+      </menu>
+    </section>
+    <aside id="tips"></aside>
+  </div>
+  <div id="templates">
+    <div id="$id" class="xw_cell $celltype">$letter</div>
+    <div class="xw_row">$cells</div>
+    <div class="xw_list"><h2>$title</h2><ul>$tiplines</ul></div>
+    <li class="xw_tipline">$n. $tips</li>
+    <span id="$id" class="xw_tip">$def</span>
+    
+  </div>
+  <script type="text/javascript" src="xw-in.js"></script>
+  <script type="text/javascript" src="xw.js"></script>
+</body>
+</html>
